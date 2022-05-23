@@ -1,0 +1,39 @@
+footer {
+  background-color: #F7F7F7;
+}
+
+.footer-info{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.footer-info p{
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  color: #878787;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.footer-link p {
+  margin-right: 30px;
+}
+
+.footer-link a {
+  color: #777;
+}
+
+.text-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

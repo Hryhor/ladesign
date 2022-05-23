@@ -1,0 +1,161 @@
+.portfolio-headihg {
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 47px;
+  color: #777;
+  margin-bottom: 60px;
+}
+
+.wrapper {
+  max-width: 1100px;
+  display: grid;
+  grid-template-areas: "a a b b c c d d"
+                       "a a f f g g g g"
+                       "z z z z g g g g"
+                       "s s r r h h h h";
+  grid-gap:30px;
+  align-items: start;
+  margin: 0 auto;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+
+.gallery__item--1 {
+    grid-area: a;
+}
+
+.gallery__item--2 {
+  grid-area: b;
+}
+
+.gallery__item--3 {
+  grid-area: c;
+}
+
+.gallery__item--4 {
+  grid-area: d;
+}
+
+.gallery__item--5 {
+  grid-area: f;
+}
+
+.gallery__item--6 {
+  grid-area: g;
+}
+
+.gallery__item--7 {
+  grid-area: z;
+}
+
+.gallery__item--8 {
+  grid-area: s;
+}
+
+.gallery__item--9 {
+  grid-area: r;
+}
+
+.gallery__item--10 {
+  grid-area: h;
+}
+
+/*button*/
+.btn-block {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  display: flex
+}
+
+.portfolio-btn {
+  margin: 0 auto;
+  padding: 20px 50px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid #393246;
+}
+
+.portfolio-btn:hover{
+  background-color: #393246;
+  color: #fff;
+  transition: 0.4s ease;
+}
+
+.request {
+  margin-bottom: 10vh;
+  display: flex
+}
+
+.request-btn {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #777
+}
+
+.portfolio-cursor{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+@media(max-width: 768px) {
+  .wrapper {
+      grid-gap: 10px;
+      grid-template-areas: "a a b b"
+                           "a a c c"
+                           "d d f f"
+                           "a a b b"
+                           "z z z z"
+                           "g g g g"
+                           "g g g g"
+                           "s s r r"
+                           "h h h h";
+
+  }
+}
+
+@media(max-width: 500px) {
+  .portfolio-headihg {
+    font-size: 30px;
+  }
+  .request-btn {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .portfolio-cursor{
+    margin-top: 1px;
+    margin-left: 1px;
+  }
+}
+
+@media(max-width: 320px) {
+  .portfolio-headihg {
+    font-size: 25px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery__item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+}

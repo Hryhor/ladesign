@@ -1,0 +1,113 @@
+/*button*/
+.mobile-nav-button {
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  background: transparent;
+
+  /*nav icon styles*/
+  position: relative;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .mobile-nav-button {
+    display: flex;
+  }
+}
+
+
+
+.mobile-nav-button__icon {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.mobile-nav-button__icon::after,
+.mobile-nav-button__icon::before {
+  position: absolute;
+  content: ' ';
+  width: 40px;
+  height: 5px;
+  background-color: #fff;
+  transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+}
+
+.mobile-nav-button__icon::before {
+  left: 0;
+  top: -10px;
+}
+
+.mobile-nav-button__icon::after {
+  left: 0;
+  top: 10px;
+}
+
+.mobile-nav-button__icon.active {
+  background: transparent;
+}
+
+.mobile-nav-button__icon.active::before {
+  transform: rotate(45deg);
+  top: 0;
+  /*трансофрмация при открывании*/
+  transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+
+.mobile-nav-button__icon.active::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+/*button*/
+
+.mobile-nav-window {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.96);
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 15px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.mobile-nav-window.active {
+  display: flex;
+}
+
+.mobile-info {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-logo {
+  left:  0px;
+}
+
+.mobile-menu {
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.mobile-menu li + li {
+  margin-top: 20px;
+}

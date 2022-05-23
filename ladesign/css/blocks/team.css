@@ -1,0 +1,161 @@
+.team {
+  margin-bottom: 150px;
+}
+
+.team-heading {
+ color: #777777;
+ font-weight: 300;
+ font-size: 40px;
+ line-height: 47px;
+ align-items: center;
+ letter-spacing: 0.08em;
+ text-transform: uppercase;
+ margin-top: 150px;
+ margin-bottom: 150px;
+}
+
+.team p {
+  color: #777;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.team-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-left {
+  max-width: 600px;
+}
+
+.team-right {
+
+}
+
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 27px 0px;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #D5D5D5;
+    /*border-bottom: 1px solid #D5D5D5;
+    /*border: none;*/
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 10px;
+}
+
+.panel{
+  padding-bottom: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    /*content: '\002B';*/
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+@media(max-width: 1299px) {
+  .team-info {
+    justify-content: space-between;
+  }
+  .team-left {
+    max-width: 550px;
+  }
+  .team-right {
+    max-width: 550px;
+  }
+}
+
+@media(max-width: 1199px) {
+  .team-info {
+    justify-content: space-between;
+  }
+  .team-left {
+    max-width: 500px;
+  }
+  .team-right {
+    max-width: 500px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .team-info {
+    justify-content: space-between;
+  }
+  .team-left {
+    max-width: 450px;
+  }
+  .team-right {
+    max-width: 450px;
+  }
+}
+
+@media(max-width: 991px) {
+  .team-heading {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    }
+  .team-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-left {
+    max-width: 750px;
+  }
+  .team-right {
+    max-width: 750px;
+  }
+}
+
+@media(max-width: 768px) {
+  .team-heading {
+    font-size: 40px;
+    max-width: 450px;
+  }
+  .team-info p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+@media(max-width: 500px){
+  .team-heading {
+    font-size: 30px;
+    max-width: 350px;
+    text-align: center;
+  }
+}
+
+@media(max-width: 320px) {
+  .team-heading {
+    font-size: 25px;
+    max-width: 220px;
+    text-align: center;
+  }
+  .team-info p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
